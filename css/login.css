@@ -1,0 +1,34 @@
+.login {
+    margin: 0 auto;
+    width: 300px;
+    top: 100px;
+    position: relative;
+}
+
+.login .input {
+    padding: 10px 0;
+}
+
+.loginbtn {
+    display: block;
+    padding: 10px 0;
+}
+
+.login a {
+    color: #8A8A8A;
+}
+
+.login a:last-child {
+    right: 0px;
+    position: absolute;
+}
+
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: white;
+    background: #26292E;
+    border-radius: 3px;
+}

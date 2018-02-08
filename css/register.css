@@ -1,0 +1,38 @@
+.register {
+    margin: 0 auto;
+    width: 300px;
+    top: 100px;
+    position: relative;
+}
+
+.register .input {
+    padding: 10px 0;
+}
+
+.registerbtn {
+    display: block;
+    padding: 10px 0;
+}
+.register a {
+    position: absolute;
+    right: 0;
+    color: #8A8A8A;
+}
+
+.register .warning{
+    position: absolute;
+    line-height: 38px;
+    left: 320px;
+    width: 300px;
+    color: red;
+}
+
+button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: white;
+    background: #26292E;
+    border-radius: 3px;
+}

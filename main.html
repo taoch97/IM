@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./Semantic/semantic.min.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="main" ng-controller="myCtrl">
+        <div class="contacts">
+            <div class="head">
+                <img src="./image/liang.jpg" alt="" width="50px" height="50px">
+                <span>陶冲</span>
+                <i class="content icon"></i>
+                <i class="sort descending icon"></i>
+            </div>
+            <div class="input">
+                <i class="search icon"></i>
+                <input type="text" name="" ng-model="search" placeholder="搜索">
+                <i ng-show="inputEmpty" ng-click="removeInputValue()" class="remove circle icon"></i>
+            </div>
+            <div class="icons">
+                <i ui-sref="comment" ng-class="{active:url=='/comment'}" class="comment  large icon" title="聊天"></i>
+                <i ui-sref="contacts" ng-class="{active:url=='/contacts'}" class="user large icon" title="通讯录"></i>
+                <i ui-sref="more" ng-class="{active:url=='/more'}" class="cube large icon" title="更多"></i>
+            </div>
+            <div class="list">
+                <ui-view></ui-view>
+            </div>
+        </div>
+        <div class="chatbox">
+            <div class="name"></div>
+            <div class="message"></div>
+            <div class="textarea">
+                <i class="smile icon"></i>
+                <i class="folder outline icon"></i>
+                <textarea name="" id="" cols="78" rows="4" autofocus></textarea>
+                <span>按Ctrl + Enter发送消息</span>
+                <button>发送</button>
+            </div>
+        </div>
+    </div>
+    <script src="./angular-1.6.6/angular.min.js"></script>
+    <script src="./js/angular-ui-router.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
